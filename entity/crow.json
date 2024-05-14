@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:crow",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_crow"
+			},
+			"geometry": {
+				"default": "geometry.crow"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+					"variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+				]
+			},
+			"animations": {
+				"default_leg_pose": "animation.bird.fly",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "nubs:crow",
+				"texture_index": 0
+			}
+		}
+	}
+}

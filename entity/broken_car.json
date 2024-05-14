@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:broken_car",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"undyed": "textures/entity/nubs_car_undyed",
+				"white": "textures/entity/nubs_car_white",
+				"orange": "textures/entity/nubs_car_orange",
+				"magenta": "textures/entity/nubs_car_magenta",
+				"light_blue": "textures/entity/nubs_car_light_blue",
+				"yellow": "textures/entity/nubs_car_yellow",
+				"lime": "textures/entity/nubs_car_lime",
+				"pink": "textures/entity/nubs_car_pink",
+				"gray": "textures/entity/nubs_car_gray",
+				"silver": "textures/entity/nubs_car_silver",
+				"cyan": "textures/entity/nubs_car_cyan",
+				"purple": "textures/entity/nubs_car_purple",
+				"blue": "textures/entity/nubs_car_blue",
+				"brown": "textures/entity/nubs_car_brown",
+				"green": "textures/entity/nubs_car_green",
+				"red": "textures/entity/nubs_car_red",
+				"black": "textures/entity/nubs_car_black"
+			},
+			"geometry": {
+				"default": "geometry.broken_car"
+			},
+			"animations": {
+				"walk": "animation.vehicle.tires_move"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.shulker"
+			],
+			"spawn_egg": {
+				"texture": "nubs:car",
+				"texture_index": 0
+			}
+		}
+	}
+}

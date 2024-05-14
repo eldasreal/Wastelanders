@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:blood_wing",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_blood_wing",
+				"angry": "textures/entity/nubs_blood_wing",
+				"nectar": "textures/entity/nubs_blood_wing",
+				"angry_nectar": "textures/entity/nubs_blood_wing"
+			},
+			"geometry": {
+				"default": "geometry.blood_wing"
+			},
+			"animations": {
+				"flying": "animation.blood_wing.flying",
+				"drip": "controller.animation.bee.drip",
+				"controller_bee_sting": "controller.animation.bee.sting",
+				"bee_sting": "animation.bee.sting",
+				"bee_no_stinger": "animation.bee.no_stinger",
+				"bee_fly_bobbing": "animation.blood_wing.bobbing",
+				"bee_root_controller": "controller.animation.bee.root"
+			},
+			"particle_effects": {
+				"nectar_dripping": "minecraft:nectar_drip_particle"
+			},
+			"scripts": {
+				"animate": [
+					"bee_root_controller",
+					{
+						"bee_no_stinger": "query.mark_variant==1"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.spider"
+			],
+			"spawn_egg": {
+				"texture": "nubs:blood_wing",
+				"texture_index": 0
+			}
+		}
+	}
+}

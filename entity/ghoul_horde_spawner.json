@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:ghoul_horde_spawner",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_air"
+			},
+			"geometry": {
+				"default": "geometry.air"
+			},
+			"spawn_egg": {
+				"texture": "nubs:ghoul",
+				"texture_index": 0
+			},
+			"render_controllers": [
+				"controller.render.skeleton"
+			]
+		}
+	}
+}

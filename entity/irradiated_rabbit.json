@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:irradiated_rabbit",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "rabbit"
+			},
+			"textures": {
+				"brown": "textures/entity/nubs_irradiated_rabbit",
+				"white": "textures/entity/nubs_irradiated_rabbit",
+				"black": "textures/entity/nubs_irradiated_rabbit",
+				"white_splotched": "textures/entity/nubs_irradiated_rabbit",
+				"gold": "textures/entity/nubs_irradiated_rabbit",
+				"salt": "textures/entity/nubs_irradiated_rabbit",
+				"toast": "textures/entity/rabbit/toast"
+			},
+			"geometry": {
+				"default": "geometry.rabbit.v1.8"
+			},
+			"animations": {
+				"move": "animation.rabbit.move",
+				"baby_transform": "animation.rabbit.baby_transform",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.rabbit.general"
+				},
+				{
+					"baby": "controller.animation.rabbit.baby"
+				}
+			],
+			"render_controllers": [
+				"controller.render.rabbit"
+			],
+			"spawn_egg": {
+				"texture": "nubs:irradiated_rabbit",
+				"texture_index": 0
+			}
+		}
+	}
+}
