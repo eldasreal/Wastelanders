@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:scrap_smg_silencer_stockless_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_scrap_smg_silencer"
+			},
+			"geometry": {
+				"default": "geometry.scrap_smg_silencer_stockless_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.scrap_smg_stockless.wield_first_person",
+				"wield_third_person": "animation.scrap_smg_stockless.wield_third_person",
+				"sprint": "animation.scrap_smg_stockless.sprint",
+				"sneak": "animation.scrap_smg_stockless.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}
