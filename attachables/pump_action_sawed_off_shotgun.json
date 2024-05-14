@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:pump_action_sawed_off_shotgun",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_pump_action_sawed_off_shotgun"
+			},
+			"geometry": {
+				"default": "geometry.pump_action_sawed_off_shotgun"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"fire": "controller.animation.gun.fire",
+				"wield_first_person": "animation.sawed_off_shotgun.wield_first_person",
+				"wield_third_person": "animation.sawed_off_shotgun.wield_third_person",
+				"shoot": "animation.sawed_off_shotgun.shoot",
+				"sprint": "animation.sawed_off_shotgun.sprint",
+				"sneak": "animation.sawed_off_shotgun.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield",
+					"fire"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}
