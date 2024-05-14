@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:rat",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_rat"
+			},
+			"geometry": {
+				"default": "geometry.rat"
+			},
+			"animations": {
+				"default_leg_pose": "animation.rat.setup",
+				"look_at_target": "animation.common.look_at_target",
+				"walk": "animation.quadruped.walk"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "nubs:rat",
+				"texture_index": 0
+			}
+		}
+	}
+}

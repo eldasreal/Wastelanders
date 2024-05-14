@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:primed_bomb",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_bomb"
+			},
+			"geometry": {
+				"default": "geometry.bomb"
+			},
+			"render_controllers": [
+				"controller.render.skeleton"
+			]
+		}
+	}
+}

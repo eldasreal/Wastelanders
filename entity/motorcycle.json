@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:motorcycle",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"undyed": "textures/entity/nubs_motorcycle_undyed",
+				"white": "textures/entity/nubs_motorcycle_white",
+				"orange": "textures/entity/nubs_motorcycle_orange",
+				"magenta": "textures/entity/nubs_motorcycle_magenta",
+				"light_blue": "textures/entity/nubs_motorcycle_light_blue",
+				"yellow": "textures/entity/nubs_motorcycle_yellow",
+				"lime": "textures/entity/nubs_motorcycle_lime",
+				"pink": "textures/entity/nubs_motorcycle_pink",
+				"gray": "textures/entity/nubs_motorcycle_gray",
+				"silver": "textures/entity/nubs_motorcycle_silver",
+				"cyan": "textures/entity/nubs_motorcycle_cyan",
+				"purple": "textures/entity/nubs_motorcycle_purple",
+				"blue": "textures/entity/nubs_motorcycle_blue",
+				"brown": "textures/entity/nubs_motorcycle_brown",
+				"green": "textures/entity/nubs_motorcycle_green",
+				"red": "textures/entity/nubs_motorcycle_red",
+				"black": "textures/entity/nubs_motorcycle_black"
+			},
+			"geometry": {
+				"default": "geometry.motorcycle"
+			},
+			"animations": {
+				"walk": "animation.vehicle.tires_move",
+				"default_leg_pose": "animation.vehicle.engine_hum"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.shulker"
+			],
+			"spawn_egg": {
+				"texture": "nubs:motorcycle",
+				"texture_index": 0
+			}
+		}
+	}
+}

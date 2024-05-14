@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:scorpion",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_scorpion"
+			},
+			"geometry": {
+				"default": "geometry.scorpion"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+					"variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+				]
+			},
+			"animations": {
+				"default_leg_pose": "animation.scorpion.default_leg_pose",
+				"look_at_target": "animation.spider.look_at_target",
+				"walk": "animation.spider.walk",
+				"climb": "animation.scorpion.climb"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.spider"
+			],
+			"spawn_egg": {
+				"texture": "nubs:scorpion",
+				"texture_index": 0
+			}
+		}
+	}
+}

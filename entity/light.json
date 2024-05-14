@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:light",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/placeholder"
+			},
+			"geometry": {
+				"default": "geometry.placeholder"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

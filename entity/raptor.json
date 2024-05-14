@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:raptor",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_raptor"
+			},
+			"geometry": {
+				"default": "geometry.raptor"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+					"variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+				]
+			},
+			"animations": {
+				"default_leg_pose": "animation.raptor.setup",
+				"walk": "animation.quadruped2.walk"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "nubs:raptor",
+				"texture_index": 0
+			}
+		}
+	}
+}
