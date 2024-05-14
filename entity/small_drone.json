@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:small_drone",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_small_drone"
+			},
+			"geometry": {
+				"default": "geometry.drone"
+			},
+			"spawn_egg": {
+				"texture": "nubs:small_drone",
+				"texture_index": 0
+			},
+			"animations": {
+				"move": "animation.drone.fly"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.ghast.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			]
+		}
+	}
+}

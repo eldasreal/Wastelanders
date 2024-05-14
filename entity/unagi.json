@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:unagi",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_unagi"
+			},
+			"geometry": {
+				"default": "geometry.unagi"
+			},
+			"animations": {
+				"default_leg_pose": "animation.unagi.setup",
+				"walk": "animation.unagi.swim"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "nubs:unagi",
+				"texture_index": 0
+			}
+		}
+	}
+}

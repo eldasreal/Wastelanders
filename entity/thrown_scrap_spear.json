@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:thrown_scrap_spear",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_scrap_spear"
+			},
+			"geometry": {
+				"default": "geometry.thrown_scrap_spear"
+			},
+			"animations": {
+				"setup": "animation.spear.thrown"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.shake = query.shake_time - query.frame_alpha;",
+					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+				],
+				"animate": [
+					"setup"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:truck",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"undyed": "textures/entity/nubs_truck_undyed",
+				"white": "textures/entity/nubs_truck_white",
+				"orange": "textures/entity/nubs_truck_orange",
+				"magenta": "textures/entity/nubs_truck_magenta",
+				"light_blue": "textures/entity/nubs_truck_light_blue",
+				"yellow": "textures/entity/nubs_truck_yellow",
+				"lime": "textures/entity/nubs_truck_lime",
+				"pink": "textures/entity/nubs_truck_pink",
+				"gray": "textures/entity/nubs_truck_gray",
+				"silver": "textures/entity/nubs_truck_silver",
+				"cyan": "textures/entity/nubs_truck_cyan",
+				"purple": "textures/entity/nubs_truck_purple",
+				"blue": "textures/entity/nubs_truck_blue",
+				"brown": "textures/entity/nubs_truck_brown",
+				"green": "textures/entity/nubs_truck_green",
+				"red": "textures/entity/nubs_truck_red",
+				"black": "textures/entity/nubs_truck_black"
+			},
+			"geometry": {
+				"default": "geometry.truck"
+			},
+			"animations": {
+				"walk": "animation.vehicle.tires_move",
+				"default_leg_pose": "animation.vehicle.engine_hum"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.spider.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.shulker"
+			],
+			"spawn_egg": {
+				"texture": "nubs:truck",
+				"texture_index": 0
+			}
+		}
+	}
+}

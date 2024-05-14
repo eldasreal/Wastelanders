@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:scrap_shotgun_pellet",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/guns/projectiles/nubs_shotgun_pellet"
+			},
+			"geometry": {
+				"default": "geometry.shotgun_pellet"
+			},
+			"animations": {
+				"setup": "animation.bullet.shot"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.shake = query.shake_time - query.frame_alpha;",
+					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+				],
+				"animate": [
+					"setup"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

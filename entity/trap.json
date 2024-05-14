@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "nubs:trap",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/nubs_trap"
+			},
+			"geometry": {
+				"default": "geometry.trap"
+			},
+			"spawn_egg": {
+				"texture": "nubs:trap",
+				"texture_index": 0
+			},
+			"render_controllers": [
+				"controller.render.skeleton"
+			]
+		}
+	}
+}
