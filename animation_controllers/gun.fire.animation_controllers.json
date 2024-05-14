@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.100",
+	"animation_controllers": {
+		"controller.animation.gun.fire": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"fire": "query.cooldown_time_remaining('minecraft:slot.weapon.mainhand') != 0 && c.is_first_person"
+						}
+					]
+				},
+				"fire": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"animation_controllers": {
+		"controller.animation.flashlight.wield": {
+			"initial_state": "first_person",
+			"states": {
+				"first_person": {
+					"animations": [
+						{
+							"query": {
+								"scale": {
+									"query": "mark_variant != 2"
+								}
+							}
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "!c.is_first_person"
+						}
+					]
+				},
+				"third_person": {
+					"animations": [
+						{
+							"no_scale": {}
+						}
+				

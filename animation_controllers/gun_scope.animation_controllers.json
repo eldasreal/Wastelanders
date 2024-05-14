@@ -1,0 +1,51 @@
+{
+	"format_version": "1.16.100",
+	"animation_controllers": {
+		"controller.animation.gun_scope.wield": {
+			"initial_state": "first_person",
+			"states": {
+				"first_person": {
+					"animations": [
+						"wield_first_person",
+						{
+							"transition": "sprint",
+							"condition": {
+								"query": {
+									"is_sprinting": true,
+									"cooldown_time_remaining": {
+										"item": "minecraft:slot.weapon.mainhand",
+										"operator": "==",
+										"value": 0
+									}
+								}
+							}
+						},
+						{
+							"transition": "sneak",
+							"condition": {
+								"query": {
+									"is_sneaking": true
+								}
+							}
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "!c.is_first_person"
+						}
+					]
+				},
+				"third_person": {
+					"animations": [
+						"wield_third_person"
+					],
+					"transitions": [
+						{
+							"first_person": "c.is_first_person"
+						}
+					]
+				}
+			}
+		}
+	}
+}

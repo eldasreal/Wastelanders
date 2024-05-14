@@ -1,0 +1,67 @@
+{
+	"format_version": "1.16.100",
+	"animation_controllers": {
+		"controller.animation.spider.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"default_leg_pose",
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"climbing": "query.is_wall_climbing"
+						}
+					],
+					"blend_trees": [
+						{
+							"blend_weight": 1.0,
+							"simple_blend": {
+								"input_parameter": "speed_multiplier",
+								"thresholds": [
+									{
+										"upper": 0.0,
+										"state": "walk"
+									}
+								]
+							}
+						}
+					]
+				},
+				"climbing": {
+					"animations": [
+						"default_leg_pose",
+						{
+							"walk": "query.modified_move_speed||query.is_wall_climbing"
+						},
+						"look_at_target",
+						"climb"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_wall_climbing"
+						}
+					],
+					"blend_trees": [
+						{
+							"blend_weight": 1.0,
+							"simple_blend": {
+								"input_parameter": "speed_multiplier",
+								"thresholds": [
+									{
+										"upper": 0.0,
+										"state": "walk"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	}
+}
