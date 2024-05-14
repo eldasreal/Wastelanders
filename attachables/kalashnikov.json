@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:kalashnikov",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_kalashnikov"
+			},
+			"geometry": {
+				"default": "geometry.kalashnikov"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"fire": "controller.animation.gun.fire",
+				"wield_first_person": "animation.kalashnikov.wield_first_person",
+				"wield_third_person": "animation.kalashnikov.wield_third_person",
+				"shoot": "animation.kalashnikov.shoot",
+				"sprint": "animation.kalashnikov.sprint",
+				"sneak": "animation.kalashnikov.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield",
+					"fire"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

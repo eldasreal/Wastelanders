@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:dead_flashlight",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/nubs_dead_flashlight"
+			},
+			"geometry": {
+				"right": "geometry.flashlight_right",
+				"left": "geometry.flashlight_left"
+			},
+			"render_controllers": [
+				"controller.render.flashlight"
+			],
+			"animations": {
+				"hold_right": "animation.flashlight.right_hand",
+				"hold_left": "animation.flashlight.left_hand",
+				"scale": "animation.flashlight.scale",
+				"wield": "controller.animation.flashlight.wield"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.is_using_vr = 0;"
+				],
+				"animate": [
+					{
+						"hold_right": "c.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'nubs:dead_flashlight')"
+					},
+					{
+						"hold_left": "c.is_first_person && query.is_item_name_any('slot.weapon.offhand', 0, 'nubs:dead_flashlight')"
+					},
+					{
+						"wield": true
+					}
+				]
+			}
+		}
+	}
+}

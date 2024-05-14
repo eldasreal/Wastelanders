@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:break_action_sawed_off_shotgun_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_break_action_sawed_off_shotgun"
+			},
+			"geometry": {
+				"default": "geometry.break_action_sawed_off_shotgun_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.sawed_off_shotgun.wield_first_person",
+				"wield_third_person": "animation.sawed_off_shotgun.wield_third_person",
+				"sprint": "animation.sawed_off_shotgun.sprint",
+				"sneak": "animation.sawed_off_shotgun.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:automatic_rifle_silencer_stockless",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_automatic_rifle_silencer"
+			},
+			"geometry": {
+				"default": "geometry.automatic_rifle_silencer_stockless"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"fire": "controller.animation.gun.fire",
+				"wield_first_person": "animation.automatic_rifle_stockless.wield_first_person",
+				"wield_third_person": "animation.automatic_rifle_stockless.wield_third_person",
+				"shoot": "animation.automatic_rifle_stockless.shoot",
+				"sprint": "animation.automatic_rifle_stockless.sprint",
+				"sneak": "animation.automatic_rifle_stockless.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield",
+					"fire"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:laser_pistol_empty",
+			"materials": {
+				"default": "spider",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_laser_pistol_empty"
+			},
+			"geometry": {
+				"default": "geometry.laser_pistol_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.laser_pistol.wield_first_person",
+				"wield_third_person": "animation.laser_pistol.wield_third_person",
+				"sprint": "animation.laser_pistol.sprint",
+				"sneak": "animation.laser_pistol.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.spider"
+			]
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:kalashnikov_scope",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint",
+				"scoped": "slime_outer"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_kalashnikov_scope",
+				"scoped": "textures/entity/nubs_scoped"
+			},
+			"geometry": {
+				"default": "geometry.kalashnikov_scope",
+				"scoped": "geometry.scoped"
+			},
+			"animations": {
+				"wield": "controller.animation.gun_scope.wield",
+				"fire": "controller.animation.gun.fire",
+				"wield_first_person": "animation.kalashnikov.wield_first_person",
+				"wield_third_person": "animation.kalashnikov.wield_third_person",
+				"shoot": "animation.kalashnikov.shoot",
+				"sprint": "animation.kalashnikov.sprint",
+				"sneak": "animation.kalashnikov.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield",
+					"fire"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default",
+				{
+					"controller.render.scoped": "query.mark_variant == 2 && c.is_first_person"
+				}
+			]
+		}
+	}
+}

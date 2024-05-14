@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:automatic_pistol_mag_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_automatic_pistol"
+			},
+			"geometry": {
+				"default": "geometry.automatic_pistol_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.automatic_pistol.wield_first_person",
+				"wield_third_person": "animation.automatic_pistol.wield_third_person",
+				"sprint": "animation.automatic_pistol.sprint",
+				"sneak": "animation.automatic_pistol.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

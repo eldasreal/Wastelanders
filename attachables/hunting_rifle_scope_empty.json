@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:hunting_rifle_scope_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_hunting_rifle_scope"
+			},
+			"geometry": {
+				"default": "geometry.hunting_rifle_scope_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.hunting_rifle.wield_first_person",
+				"wield_third_person": "animation.hunting_rifle.wield_third_person",
+				"sprint": "animation.hunting_rifle.sprint",
+				"sneak": "animation.hunting_rifle.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

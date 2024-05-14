@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:automatic_rifle_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_automatic_rifle"
+			},
+			"geometry": {
+				"default": "geometry.automatic_rifle_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.automatic_rifle.wield_first_person",
+				"wield_third_person": "animation.automatic_rifle.wield_third_person",
+				"sprint": "animation.automatic_rifle.sprint",
+				"sneak": "animation.automatic_rifle.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}
