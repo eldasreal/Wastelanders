@@ -1,0 +1,242 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.blood_wing",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "thorax",
+					"pivot": [
+						3,
+						-3,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								5,
+								1
+							],
+							"size": [
+								6,
+								8,
+								6
+							],
+							"uv": [
+								30,
+								10
+							]
+						}
+					]
+				},
+				{
+					"name": "abdomen",
+					"parent": "thorax",
+					"pivot": [
+						0,
+						5,
+						4
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								2,
+								-6
+							],
+							"size": [
+								8,
+								6,
+								10
+							],
+							"uv": [
+								0,
+								16
+							]
+						},
+						{
+							"origin": [
+								0,
+								5,
+								-8
+							],
+							"size": [
+								0,
+								2,
+								2
+							],
+							"uv": [
+								0,
+								2
+							]
+						},
+						{
+							"origin": [
+								0,
+								6,
+								-11
+							],
+							"size": [
+								0,
+								1,
+								3
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "thorax",
+					"pivot": [
+						0,
+						13,
+						3
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								11,
+								-2
+							],
+							"size": [
+								6,
+								4,
+								6
+							],
+							"inflate": 0.1,
+							"uv": [
+								30,
+								26
+							]
+						}
+					]
+				},
+				{
+					"name": "la",
+					"parent": "head",
+					"pivot": [
+						2.5,
+						14,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								15,
+								-5
+							],
+							"size": [
+								1,
+								0,
+								3
+							],
+							"uv": [
+								2,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "ra",
+					"parent": "head",
+					"pivot": [
+						-2.5,
+						14,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								15,
+								-5
+							],
+							"size": [
+								1,
+								0,
+								3
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "wing0",
+					"parent": "thorax",
+					"pivot": [
+						2,
+						12,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								13,
+								5
+							],
+							"size": [
+								14,
+								0,
+								8
+							],
+							"uv": [
+								0,
+								8
+							]
+						}
+					]
+				},
+				{
+					"name": "wing1",
+					"parent": "thorax",
+					"pivot": [
+						-2,
+						12,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								-17,
+								13,
+								5
+							],
+							"size": [
+								14,
+								0,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
