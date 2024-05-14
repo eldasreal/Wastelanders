@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:lever_action_rifle_scope_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_lever_action_rifle_scope"
+			},
+			"geometry": {
+				"default": "geometry.lever_action_rifle_scope_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.lever_action_rifle.wield_first_person",
+				"wield_third_person": "animation.lever_action_rifle.wield_third_person",
+				"sprint": "animation.lever_action_rifle.sprint",
+				"sneak": "animation.lever_action_rifle.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}
