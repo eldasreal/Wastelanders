@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:scrap_rifle_scope_stockless_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_scrap_rifle_scope"
+			},
+			"geometry": {
+				"default": "geometry.scrap_rifle_scope_stockless_empty"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.scrap_rifle_stockless.wield_first_person",
+				"wield_third_person": "animation.scrap_rifle_stockless.wield_third_person",
+				"sprint": "animation.scrap_rifle_stockless.sprint",
+				"sneak": "animation.scrap_rifle_stockless.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

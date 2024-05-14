@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:scrap_rifle_scope",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint",
+				"scoped": "slime_outer"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_scrap_rifle_scope",
+				"scoped": "textures/entity/nubs_scoped"
+			},
+			"geometry": {
+				"default": "geometry.scrap_rifle_scope",
+				"scoped": "geometry.scoped"
+			},
+			"animations": {
+				"wield": "controller.animation.gun_scope.wield",
+				"fire": "controller.animation.gun.fire",
+				"wield_first_person": "animation.scrap_rifle.wield_first_person",
+				"wield_third_person": "animation.scrap_rifle.wield_third_person",
+				"shoot": "animation.scrap_rifle.shoot",
+				"sprint": "animation.scrap_rifle.sprint",
+				"sneak": "animation.scrap_rifle.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield",
+					"fire"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default",
+				{
+					"controller.render.scoped": "query.mark_variant == 2 && c.is_first_person"
+				}
+			]
+		}
+	}
+}

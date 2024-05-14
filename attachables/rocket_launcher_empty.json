@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "nubs:rocket_launcher_empty",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/guns/firearms/nubs_rocket_launcher"
+			},
+			"geometry": {
+				"default": "geometry.rocket_launcher"
+			},
+			"animations": {
+				"wield": "controller.animation.gun.wield",
+				"wield_first_person": "animation.rocket_launcher.wield_first_person",
+				"wield_third_person": "animation.rocket_launcher.wield_third_person",
+				"sprint": "animation.rocket_launcher.sprint",
+				"sneak": "animation.rocket_launcher.sneak"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}
