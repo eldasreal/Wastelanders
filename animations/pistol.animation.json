@@ -1,0 +1,138 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pistol.shoot": {
+			"animation_length": 0.75,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-15,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							1,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hammer": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							0,
+							2
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.pistol.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": [
+						1.5,
+						1.5,
+						1.5
+					]
+				}
+			}
+		},
+		"animation.pistol.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						17,
+						0
+					]
+				}
+			}
+		},
+		"animation.pistol.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.pistol.sneak": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [
+						-0.99258,
+						-0.49887,
+						-11.86948
+					],
+					"position": [
+						11,
+						4,
+						0
+					]
+				}
+			}
+		}
+	}
+}

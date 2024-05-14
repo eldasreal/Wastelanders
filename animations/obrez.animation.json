@@ -1,0 +1,202 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.obrez.shoot": {
+			"animation_length": 3,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-35,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							1,
+							2
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"bolt": {
+					"position": {
+						"0.375": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							0,
+							0.25,
+							0
+						],
+						"0.625": [
+							0,
+							0.25,
+							-1
+						],
+						"0.6875": [
+							0,
+							0,
+							-1
+						],
+						"0.75": [
+							0,
+							0.25,
+							-1
+						],
+						"0.875": [
+							0,
+							0.25,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.obrez.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": [
+						1.5,
+						1.5,
+						1.5
+					]
+				}
+			}
+		},
+		"animation.obrez.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						17,
+						0
+					]
+				}
+			}
+		},
+		"animation.obrez.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.obrez.sneak": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [
+						-0.99258,
+						-0.49887,
+						-11.86948
+					],
+					"position": [
+						11,
+						4,
+						0
+					]
+				}
+			}
+		},
+		"animation.obrez.reload": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-35,
+							0,
+							0
+						],
+						"1.0": [
+							-35,
+							0,
+							0
+						],
+						"1.25": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"bolt": {
+					"position": {
+						"0.5": [
+							0,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							4
+						]
+					}
+				}
+			}
+		}
+	}
+}

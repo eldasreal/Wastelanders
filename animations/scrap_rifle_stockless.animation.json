@@ -1,0 +1,178 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scrap_rifle_stockless.shoot": {
+			"animation_length": 1.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-45,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-1,
+							6,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hammer": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							0,
+							2
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"bolt": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						],
+						"0.375": [
+							0,
+							0,
+							0
+						],
+						"0.625": [
+							0,
+							0,
+							-6
+						],
+						"0.75": [
+							0,
+							0,
+							-6
+						],
+						"0.875": [
+							0,
+							0,
+							-6
+						],
+						"1.125": [
+							0,
+							0,
+							0
+						],
+						"1.25": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.scrap_rifle_stockless.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.scrap_rifle_stockless.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						18,
+						0
+					]
+				}
+			}
+		},
+		"animation.scrap_rifle_stockless.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.scrap_rifle_stockless.sneak": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-0.99258,
+						-0.49887,
+						-11.86948
+					],
+					"position": [
+						11,
+						50,
+						0
+					]
+				}
+			}
+		}
+	}
+}

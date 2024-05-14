@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scrap_hook.shot": {
+			"loop": true,
+			"bones": {
+				"scrap_hook": {
+					"rotation": [
+						"variable.shake_power-query.target_x_rotation",
+						"-query.body_y_rotation+query.target_y_rotation",
+						0
+					]
+				}
+			}
+		}
+	}
+}

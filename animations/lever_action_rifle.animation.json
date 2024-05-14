@@ -1,0 +1,189 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lever_action_rifle.shoot": {
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-35,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							4,
+							4
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"bolt": {
+					"position": {
+						"0.125": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							0.5,
+							0
+						],
+						"0.375": [
+							0,
+							0.5,
+							-2
+						],
+						"0.4375": [
+							0,
+							0,
+							-2
+						],
+						"0.5": [
+							0,
+							0.5,
+							-2
+						],
+						"0.625": [
+							0,
+							0.5,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"lever": {
+					"rotation": {
+						"0.375": [
+							0,
+							0,
+							0
+						],
+						"0.4375": [
+							-45,
+							0,
+							0
+						],
+						"0.625": [
+							-45,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.lever_action_rifle.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": [
+						1.5,
+						1.5,
+						1.5
+					]
+				}
+			}
+		},
+		"animation.lever_action_rifle.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						17,
+						0
+					]
+				}
+			}
+		},
+		"animation.lever_action_rifle.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.lever_action_rifle.sneak": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"position": [
+						0,
+						50,
+						0
+					]
+				},
+				"gun": {
+					"rotation": [
+						-0.99258,
+						-0.49887,
+						-11.86948
+					],
+					"position": [
+						7,
+						4,
+						0
+					]
+				}
+			}
+		}
+	}
+}

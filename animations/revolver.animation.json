@@ -1,0 +1,157 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.revolver.shoot": {
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							-15,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							1,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hammer": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0625": [
+							25,
+							0,
+							0
+						],
+						"0.5": [
+							25,
+							0,
+							0
+						],
+						"0.625": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"barrel": {
+					"rotation": {
+						"0.25": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							0,
+							0,
+							-90
+						]
+					}
+				}
+			}
+		},
+		"animation.revolver.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": [
+						1.5,
+						1.5,
+						1.5
+					]
+				}
+			}
+		},
+		"animation.revolver.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						17,
+						0
+					]
+				}
+			}
+		},
+		"animation.revolver.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.revolver.sneak": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [
+						-0.99258,
+						-0.49887,
+						-11.86948
+					],
+					"position": [
+						11,
+						4,
+						0
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,122 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.smg.shoot": {
+			"animation_length": 0.125,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0625": [
+							-5,
+							0,
+							0
+						],
+						"0.125": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0625": [
+							0,
+							1,
+							2
+						],
+						"0.125": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"gun": {
+					"position": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.smg.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.smg.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						17,
+						0
+					]
+				}
+			}
+		},
+		"animation.smg.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.smg.sneak": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [
+						-0.99561,
+						4.50038,
+						-11.95625
+					],
+					"position": [
+						10,
+						4,
+						0
+					]
+				}
+			}
+		}
+	}
+}

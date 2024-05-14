@@ -1,0 +1,123 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.laser_rifle.shoot": {
+			"animation_length": 0.5,
+			"bones": {
+				"gun": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0625": [
+							0,
+							0,
+							2
+						],
+						"0.1875": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.laser_rifle.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.laser_rifle.wield_first_person_offhand": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						45,
+						-45
+					],
+					"position": [
+						5,
+						20,
+						5
+					],
+					"scale": 1.5
+				},
+				"gun": {
+					"position": [
+						8,
+						5,
+						0
+					]
+				}
+			}
+		},
+		"animation.laser_rifle.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						17,
+						0
+					]
+				}
+			}
+		},
+		"animation.laser_rifle.sprint": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						-45,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-9,
+						0
+					]
+				}
+			}
+		},
+		"animation.laser_rifle.sneak": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [
+						-3.46754,
+						-0.65065,
+						-14.36499
+					],
+					"position": [
+						8,
+						4,
+						0
+					]
+				}
+			}
+		}
+	}
+}

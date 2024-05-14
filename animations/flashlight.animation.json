@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.flashlight.left_hand": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [
+						"95+variable.is_using_vr*7.5",
+						45,
+						"240+variable.is_using_vr*-2.5"
+					],
+					"position": [
+						-13,
+						-11,
+						12
+					]
+				},
+				"flashlight2": {
+					"rotation": [
+						55,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.flashlight.right_hand": {
+			"loop": true,
+			"bones": {
+				"flashlight": {
+					"rotation": [
+						55,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.flashlight.scale": {
+			"loop": true,
+			"bones": {
+				"flashlight": {
+					"scale": 1.5
+				},
+				"flashlight2": {
+					"scale": 1.5
+				}
+			}
+		}
+	}
+}
